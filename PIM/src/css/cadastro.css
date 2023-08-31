@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', 'poppins';
+}
+
+.root {
+    --yellow: #EBD38A;
+    --red: #AF5C4F;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    background: linear-gradient(180deg, #EBD38A 0%, #af5c4f 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+
+.input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15)0%, rgba(0, 0, 0, 0.0)100%);
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 8px 5px 5px;
+}
+
+.input-label {
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    /* Ajuste o valor para posicionar o texto verticalmente */
+    left: 10px;
+    /* Ajuste o valor para posicionar o texto horizontalmente */
+    font-size: 14px;
+    color: #888;
+}
+
+.container input:focus {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.input-field {
+    padding: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancelar_button {
+    order: 1;
+    margin: 20px;
+    border-radius: 20px;
+    width: 353px;
+    height: 60px;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    background-color: rgba(175, 92, 79, 0.60);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.cadastrar_button {
+    order: 2;
+    margin: 20px;
+    border-radius: 20px;
+    width: 353px;
+    height: 60px;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    background-color: rgba(175, 92, 79, 0.60);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buttons>a {
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.buttons>a:hover {
+    background-color: #974f44;
+}
+
+.buttons>a:active {
+    background-color: #974f44;
+}
+
+button:hover {
+    background-color: #974f44;
+}
+
+button:active {
+    background-color: #6d3a32;
+}
