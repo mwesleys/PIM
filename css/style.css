@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;900&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', 'poppins';
+
+
+}
+a{
+    text-decoration: none !important;
+}
+
+.root {
+    --yellow: #EBD38A;
+    --red: #AF5C4F;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #d9d9d9;
+    /* hover */
+    --grey-hover: #f0f0f0;
+    --red-hover: #b85353;
+    /* active */
+    --grey-active: #afafaf;
+    --red-active: #853f3f;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background: linear-gradient(180deg, #EBD38A 0%, #af5c4f 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.table th, .table td {
+    font-size: 25px; 
+}
+
+
+.home_button {
+    background-color: #af5c4f;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-size: 5rem;
+    color: #d9d9d9;
+    cursor: pointer;
+    width: 13rem;
+    height: 13rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.home_button:hover:not(:active) {
+    background-color: rgb(184, 83, 83);
+    transition: background-color 0.5s ease;
+
+}
+
+.home_button:active {
+    background-color: rgb(133, 63, 63);
+
+}
+
+.config_button {
+    float: right;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+    filter: none;
+    transition: filter 0.5s ease;
+
+}
+
+.gear {
+    filter: none;
+    transition: filter 0.5s ease;
+}
+
+.gear:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+
+}
+
+.gear:active {
+    filter: brightness(50%);
+
+}
+
+/* botões brancos de navegação */
+
+.n_button {
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 13rem;
+    height: 13rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.5);
+
+}
+.n_button:hover:not(:active) {
+    background-color: rgb(240, 240, 240);
+    transition: background-color 0.5s ease;
+}
+.n_button:active {
+    background-color: rgb(175, 175, 175);
+    transform: scale(0.99);
+
+}
+
+.base-white {    
+    border-radius: 25px;    
+}
+
+h1 {
+    text-align: center;
+    font-family: poppins;
+    margin-top: 0;
+    font-weight: 40rem;
+    font-size: 48px;
+
+}
+
